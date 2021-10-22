@@ -1,0 +1,10 @@
+Miscellaneous Operators
+
+*   sizeof()                -->    Returns the size of variable
+*   ternary operator
+        condition?X:Y       -->    Returns X if condition is true, else returns Y
+*   cast                    -->    Converts one data type to other
+*   Comma(,)                -->    Causes a sequence of operations to be performed
+*   Address of (&)          
+        Reference operator  -->    returns address of variable
+*   (*)                     -->    pointer to a variable
