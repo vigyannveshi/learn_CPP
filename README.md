@@ -7,7 +7,7 @@ The inspiration to create this repository comes from a keen interest in practica
 
 ### Flow of Code and Source for Question practice:
 
-I am following CPP at Apna College. Reference: https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ. And I have written all the programs I practiced while learning CPP.
+I am following CPP at Apna College, Reference: https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ. And I have written all the programs I practiced while learning CPP.
 Reference for Practice:https://www.hackerrank.com/domains/cpp
 
 ### What next?
