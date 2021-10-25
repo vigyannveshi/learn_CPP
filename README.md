@@ -3,12 +3,12 @@
 <img src="./cpp.png" width="200px" height="200px">
 
 ### Abstract
-The inspiration to create this repository comes from a keen interest in practical life problem solving. There are many programming languages other then CPP which can be used. In my first year I have studied C programming, it is a high level language with great speeds but, lacks Object Oriented Programming, and OOP is very useful is code reuseability and proper structuring of code. Python could also be a great alternative, but when it comes up to high speed and memory management applications CPP is a better choice.  
+The inspiration to create this repository comes from a keen interest in practical life-problem solving. There are many programming languages other then CPP which can be used. In my first year I have studied C programming, it is a high level language with great speeds and excellent memory management as it is close to hardware, but lacks Object Oriented Programming. OOP is very useful in code reuseability and proper structuring of code. Python could also be a great alternative, but when it comes up to high speed, memory management and Hardware interaction applications  CPP is a better choice. 
 
 ### Flow of Code and Source for Question practice:
 
-I am following CPP at Apna College, Reference: https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ. And I have written all the programs I practiced while learning CPP.
-Reference for Practice:https://www.hackerrank.com/domains/cpp
+I am following CPP at Apna College, Reference: https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ. And I have written all the programs I practiced while learning CPP on Apna College in a directory called learned_programs.
+Reference for Practice:https://www.hackerrank.com/domains/cpp. The questions practiced will be added to a directory practice_programs.
 
 ### What next?
 
