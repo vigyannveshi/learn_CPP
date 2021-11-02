@@ -1,0 +1,200 @@
+Logic behind Decimal to Binary
+long decimalToBinary(int n)
+{
+    int x=1;
+    int answer=0;
+    while(x<=n)
+    {
+        x*=2;
+    }
+    x/=2;
+    while(x>0)
+    {
+        int lastDigit=n/x;
+        n-=lastDigit*x;
+        x/=2;
+        answer=answer*10+lastDigit;
+    }
+    return answer; 
+
+}
+
+let n=23;
+x=1, answer=0,lastDigit=0;
+--------------
+step 1:
+x=16
+x>0
+lastDigit=1
+n=23-1*16=7
+n=7
+x=8
+answer=10*0+1=1
+-------------
+step 2:
+x=8
+x>0
+n=7
+lastDigit=0;
+n=7-0*8=7;
+x=4;
+answer=10*1+0=10
+-------------
+step 3:
+x=4;
+x>0
+n=7;
+lastDigit=1;
+n=7-1*4=3;
+x=2;
+answer=10*10+1=101;
+-------------
+step 5:
+x=2;
+x>0
+n=3;
+lastDigit=1;
+n=3-2*1=1;
+x=1;
+answer=101*10+1=1011;
+-------------
+step 6:
+x=1;
+x>0;
+n=1;
+lastDigit=1;
+n=1-1*1=0;
+x=0;
+answer=1011*10+1=10111;
+--------------
+x=0
+x<0
+return:10111
+--------------
+
+***********************###################*********************
+
+Logic behind Decimal to Octal
+
+int decimalToOctal(int n)
+{
+    int x=1;
+    int answer=0;
+    while(x<=n)
+    {
+        x*=8;
+    }
+    x/=8;
+    while(x>0)
+    {
+        int lastDigit=n/x;
+        n-=lastDigit*x;
+        x/=8;
+        answer=answer*10+lastDigit;
+    }
+    return answer; 
+
+}
+
+let n=100;
+Initially x=1, answer=0, lastDigit=0
+
+----****----****----****----****----****----
+Step 1:
+n=100;
+x>0;
+x=8^2=64;
+last digit =1;
+n=100-64*1=36;
+answer=10*0+1*1=1;
+x-->8;
+step 2:
+x>0;
+n=36;
+x=8;
+lastDigit=4;
+n=36-8*4=4;
+answer=10*1+4=14;
+x-->1;
+step 3:
+x>0;
+n=4;
+x=1;
+lastDigit=4;
+n=4-1*4=0;
+answer=14*10+4=144;
+x-->0;
+step 4:
+x<0;
+stop;
+return answer = 144;
+
+***********************###################*********************
+
+Logic behind Decimal to Hexadecimal
+
+string decimalToHexadecimal(int n)
+{
+    int rem, temp;
+    string answer="";
+    temp=n;
+
+    while(temp>0)
+    {
+        rem=temp%16;
+        if(rem<10)
+        {
+            char c=48+rem;
+            answer.push_back(c);
+        }
+        if(rem>10)
+        {
+            char c=55+rem;
+            answer.push_back(c);
+        }
+        temp=temp/16;
+    }
+    reverse(answer.begin(), answer.end()); 
+    return answer;
+}
+
+----****----****----****----****----
+
+let n=465
+Initially x=1;lastDigit=0; answer="";
+
+step 1:
+n=465;
+x=256;
+x>0
+lastDigit=1;
+n=465-256*1=209;
+x-->16
+lastDigit<=9;
+answer="1";
+
+step 2:
+n=209;
+x=16;
+x>0
+lastDigit=13
+n=209-16*13=1
+lastDigit>9;
+c='D';
+x-->1
+answer="1D";
+
+step 3:
+n=1;
+x=1;
+x>0;
+lastDigit=1;
+n=1-1*1=0;
+lastDigit<=9;
+x-->0;
+answer="1D1";
+
+step 5:
+x<0;
+stop;
+return answer="1D1";
