@@ -99,10 +99,10 @@ int main()
 
     for(int i=0;i<n;i++)
     {
-        // if(i==(n-1))
-        // {
-        //     arr[i+1]=-1;
-        // }
+        if(i==(n-1))
+        {
+            arr[i+1]=-1;
+        }
         if(arr[i]>mx && arr[i]>arr[i+1])
         {
             ans++;
