@@ -1,0 +1,17 @@
+/*
+Subarray:continuous part of the array
+    suppose we have an array:
+    arr[]={1,2,0,7,2,0,2};
+    subarray of arr[]={2,0,7,2};
+
+    Number of subarrays of an array with n elements = nC2 + n = (n*(n+1))/2;
+
+Subsequence:is a sequence that can be derieved from an array by selecting zero or more elements without changing the order of the remaining elements.
+    suppose we have an array:
+    arr[]={1,2,0,7,2,0,2};
+    subsequence of arr[]= {1, 0, 0, 2};
+
+    Number of subsequences of an array with n elements = 2^n
+
+"Every Subarray is a subsequence, but every subsequence is not an subarray."     
+*/
