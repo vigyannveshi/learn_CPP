@@ -1,0 +1,22 @@
+Algorithms Learnt:
+
+1) Kadane's Algorithm
+    Application: Helps to solve maximum possible subarray sum within time complexity of O(n).
+
+    Example:
+    Array:                -1 4 -6 7 -4
+    Cummulative Sum:      -1-->update to 0 
+    Cummulative Sum:       0 
+    Cummulative Sum:       0 4 -2-->update to 0
+    Cummulative Sum:       0 4  0 7  3
+    Maximum possible sum of subarray = 7
+
+--> Refer: 61-array_challenge_11.cpp
+
+    Disadvantage: If array contains all negative numbers, then max sum will always be 0, which is not true. This issue needs a solution.
+    
+    Problem solved:
+--> Refer: 62-array_challenge_12.cpp
+
+--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--
+
