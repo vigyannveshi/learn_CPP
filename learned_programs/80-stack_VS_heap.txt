@@ -1,0 +1,48 @@
+Dyanmic Memory Allocation (DMA)
+
+Stack:
+--> Stack is a collection of functions which get added up in order of execution --> Last First and First Last and once the role of the function is done it is taken out of stack.
+--> It is of fixed size / memory and we cannot change it once declared.
+--> The system needs to be aware of the size of the memory to be allocated.
+--> There are cases wherein on accumulating functions one after the other, the memory gets fulled and this condition is called stack overflow.
+
+Heap:{Dyanmic Memory Allocation} 
+--> Here we manually allocate or deallocate memory to our variables.
+--> Size of  heap can be expanded as big as the virtual memory of our system.
+
+Inorder to allocate memory in the heap we use the new operator
+    int *p = new int();
+    *p=10;
+
+    here p is not directly stored in heap,
+    actually p is a pointer that is stored in stack, but would be pointing to heap.
+
+    This memory allocated in the heap, can be accesed anywhere in the program, as along we have its address i.e; it behaves as a global variable.
+
+    Since we have manually allocated memory in the heap, hence we need to manually deallocate it also.
+
+Inorder to deallocate memory in the heap we use the delete operator
+
+    delete(p);-->memory allocated corresponding to address p, will be deallocated.
+
+        note: although we have deleted the allocated memory yet the pointer will point at the same address in the heap until rereferenced and is called dangling pointer.
+
+    Either we can reuse the dangling pointer or we will have to delete this pointer even from the stack
+
+    delete[]p;--> Deletes the block  of memory assigned to array.
+
+Inorder to delete pointer, even from the stack, we use:
+p=Null; 
+And soon as you exit the program, the pointer is deleted.
+
+Need of Deallocation of Memory in Heap
+--> In stack, memory is self deallocted.
+--> We need to, because it doesn't happen own itsowen.
+--> It would result in memory leak, it is an issue in programs such as servers, which are never terminated.
+
+
+
+
+
+
+
