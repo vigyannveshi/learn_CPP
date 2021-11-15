@@ -1,0 +1,39 @@
+1) A binary number n, and a number preceeding it (n-1), can be differentiated using the fact that the first rightmost bit of n, and its preceeding bits , if complemented/inverted gives you (n-1).
+
+eg:
+6-->000001(10)
+5-->000001(01)
+
+8-->0000(1000)
+7-->0000(0111)
+
+Now if we take n&(n-1)--> This will yield a binary such that it will all the bits same as n, except the first rightmost set bit. 
+Note: setbit is a bit with value =1.
+
+Application:
+1)Used to reduce the time complexity for the problem
+    Check whether a number is a power of 2.
+-->Brute force approach would be using a loop and constant division by 2 until 0, checking the final remainder. This has an order of n.
+
+Now knowing the fact that powers of 2 have the only one set bit,
+let p be a power of 2;
+--> p&(p-1)=0;
+
+Refer:91-bit_manipulation_challenge_1.cpp
+
+
+2)Can be used to solve the number of ones in a binary number
+ --> loop until n!=0, and start a counter=0, count and put n=n&(n-1);
+ logic:
+    n&(n-1)--> will be a binary number such that all bits will be similar to n, except the first rightmost bit of n.
+    everytime we loop one 1 is deleted, and we employ this counter to count those
+    -->Actually this may not change the time complexity but, it would be needing less runtime to get the answer as compared to the case of traversing to entire number and then returning 1.
+Refer:92-bit_manipulation_challenge_2.cpp
+
+--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--
+
+
+
+
+
+
