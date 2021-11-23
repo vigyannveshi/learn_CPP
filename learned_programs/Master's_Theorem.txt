@@ -1,0 +1,52 @@
+Finding Time complexity using the master's theorem:
+--> Recurrence Relation:It is a relation that recursively defines a sequence.
+
+Example:
+Fibonacci Series
+F(n)=F(n-1)+F(n-2);--> Master's Theorem.
+
+Master's Theorem
+Gives the time complexity for the recurrence relation:
+T(n)=aT(n/b)+f(n);
+ Note Q denotes Big thetha which is a function of n, and base of log is 2 unless mentioned.
+For the recurrence of: T(n)=aT(n/b)+Q(n^c),a>=1,b>1;
+--> There are three possible cases:
+1)if f(n)=Q(n^c) where c<[log(a)/log(b)] -->c<[log(a) with base b]
+    then T(n)=Q(n^[log(a)/log(b)])
+2)if f(n)=Q(n^c) where c=[log(a)/log(b)] -->c=[log(a) with base b]
+    then T(n)=Q((n^c)logn)
+2)if f(n)=Q(n^c) where c>[log(a)/log(b)] -->c>[log(a) with base b]
+    then T(n)=Q(f(n))
+
+Example:
+1) T(n)=2T(n/2)+Q(n)
+    T(n)=aT(n/b)+Q(n^c);
+    on comparing:
+    a=2,b=2,c=1
+    c=loga/logb
+    T(n)=Q(nlogn)
+
+2) T(n)=3T(n/2)+n^2
+    T(n)=aT(n/b)+Q(n^c);
+    on comparing:
+    a=3,b=2,c=2;
+    log(3)=1.584<c;
+    T(n)=Q(n^log3)--> Q(n^2)--> we consider rounded integer for power.
+
+-----------------------------------------------------------------------
+Recurrence Tree Method
+Example:T(n)=T(n-1)+n
+-->T(n)=T(n-1)+n
+-->T(n-1)=T(n-2)+n-1
+-->T(n-2)=T(n-3)+n-2
+-->.
+-->.
+-->.
+-->T(1)=1
+
+Add all the arrowed equations,we get
+T(n)=n+(n-1)+(n-2)+(n-3)+.....+1
+T(n)=(n*(n+1))/2;
+T(n)=Q(n^2);
+
+----------------------------------------------------------------------
