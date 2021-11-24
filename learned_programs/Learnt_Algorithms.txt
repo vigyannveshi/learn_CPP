@@ -41,3 +41,16 @@ Algorithms Learnt:
         --> Refer: 100-euclids_algorith_for_gcd.cpp
 
 --*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--
+
+DNF Algorithm
+DNF-Dutch National FLag--> also called (0,1,2) sort
+
+--> used for sorting an array with three type of elements--> 0,1,2;
+
+0--> zeroes(RED)
+1--> ones(white)-->low
+1 to 2-->unknown()-->mid
+2--> twos(blue)-->high
+
+It symbolises the dutch national flag, hence DNF algorithm
+
