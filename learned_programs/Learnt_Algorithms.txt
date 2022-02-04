@@ -42,7 +42,7 @@ Algorithms Learnt:
 
 --*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--
 
-DNF Algorithm
+3)DNF Algorithm
 DNF-Dutch National FLag--> also called (0,1,2) sort
 
 --> used for sorting an array with three type of elements--> 0,1,2;
@@ -54,3 +54,7 @@ DNF-Dutch National FLag--> also called (0,1,2) sort
 
 It symbolises the dutch national flag, hence DNF algorithm
 
+--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--
+Floyd's Algorithm: Tortoise and Hare Algorithm
+
+Used to detect and remove cycles in linked list
