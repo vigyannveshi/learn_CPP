@@ -2,7 +2,7 @@
 The program shall correctly visualize the total number of perfectly ascending and perfectly descending numbers for a 5 digit number have digits from 0 to 9
 
 eg: 54320,54321,96420 etc--> perfectly descending
-    23456, 25789, 12345 etc--> perfectly descending
+    23456, 25789, 12345 etc--> perfectly ascending
     here 01234 although appears ascending but can't be treated as a 5 digit number. 
 */
 
