@@ -6,6 +6,7 @@ eg: 54320,54321,96420 etc--> perfectly descending
     here 01234 although appears ascending but can't be treated as a 5 digit number. 
 */
 
+
 #include <iostream>
 
 using namespace std;
