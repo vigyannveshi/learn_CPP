@@ -6,7 +6,6 @@ eg: 54320,54321,96420 etc--> perfectly descending
     here 01234 although appears ascending but can't be treated as a 5 digit number. 
 */
 
-
 #include <iostream>
 
 using namespace std;
@@ -52,35 +51,36 @@ bool check_ascending(int a)
         a/=10;
     }
     int Arr[N];
-    for(int i=4;i>=0;i--)
+    for(int i=N-1;i>=0;i--)
     {
-        Arr[4-i]=arr[i];
+        Arr[N-1-i]=arr[i];
     }
+    if(Arr[0]!=0)
+    {
     return is_sorted(N,Arr);
+    }
+    return 0;
 }
 
 int main()
 {
-    
     int count_D=0,count_A=0;
     for(int i=0;i<99999;i++)
     {
         if(check_descending(i)==1)
         {
-            cout<<i<<endl;
             count_D++;
         }
     }
-    cout<<endl<<count_D<<endl<<endl<<endl;
+    cout<<endl<<count_D<<endl;
     for(int i=0;i<99999;i++)
     {
-        if(check_descending(i)==1)
+        if(check_ascending(i)==1)
         {
-            cout<<i<<endl;
             count_A++;
         }
     }
-    cout<<count_A;
+    cout<<endl<<count_A;
     
     return 0;
 }
